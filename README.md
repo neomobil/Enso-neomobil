@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--h-->
 # Laravel Enso
 [![StyleCI](https://styleci.io/repos/95136264/shield?branch=master)](https://styleci.io/repos/95136264)
@@ -196,3 +197,7 @@ are welcome. Pull requests are great, but issues are good too.
 
 This package is released under the MIT license.
 <!--/h-->
+=======
+# Enso-neomobil
+Patched version of laravel-enso
+>>>>>>> 732fb7fe631aea5ba794c0156f440416f2c8bc34
