@@ -15,7 +15,7 @@ class Menu extends Model
 
     protected $attributes = ['order' => 999, 'has_children' => false];
 
-    protected $casts = ['has_children' => 'boolean', 'parent_id' => 'integer'];
+    protected $casts = ['has_children' => 'boolean'];
 
     public function roles()
     {
