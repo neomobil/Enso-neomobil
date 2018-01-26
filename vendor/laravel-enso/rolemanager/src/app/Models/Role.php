@@ -14,7 +14,6 @@ class Role extends Model
     use DbSyncMigrations;
 
     protected $fillable = ['name', 'display_name', 'description', 'menu_id'];
-    protected $casts = ['role_id' => 'integer'];
 
     public function menus()
     {
