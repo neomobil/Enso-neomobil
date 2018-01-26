@@ -1,0 +1,55 @@
+{
+    "routePrefix": "system.tutorials",
+    "columns": "1",
+    "fields": [{
+        "label": "Permission",
+        "name": "permission_id",
+        "value": null,
+        "meta": {
+            "type": "select",
+            "multiple": false,
+            "options": null
+        }
+    }, {
+        "label": "Element",
+        "name": "element",
+        "value": null,
+        "meta": {
+            "type": "input",
+            "content": "text"
+        }
+    }, {
+        "label": "Title",
+        "name": "title",
+        "value": null,
+        "meta": {
+            "type": "input",
+            "content": "text"
+        }
+    }, {
+        "label": "Placement",
+        "name": "placement",
+        "value": null,
+        "meta": {
+            "type": "select",
+            "multiple": false,
+            "options": null
+        }
+    }, {
+        "label": "Order",
+        "name": "order",
+        "value": false,
+        "meta": {
+            "type": "input",
+            "content": "number"
+        }
+    }, {
+        "label": "Content",
+        "name": "content",
+        "value": null,
+        "meta": {
+            "type": "textarea",
+            "rows": 5
+        }
+    }]
+}

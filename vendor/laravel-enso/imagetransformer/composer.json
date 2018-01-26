@@ -1,0 +1,38 @@
+{
+    "name": "laravel-enso/imagetransformer",
+    "description": "Image transformer dependency for Laravel Enso",
+    "keywords": [
+        "laravel-enso",
+        "imagetransformer",
+        "image-transformer",
+        "image-optimizer"
+    ],
+    "homepage": "https://github.com/laravel-enso/ImageTransformer",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "5.5.*",
+        "ps/image-optimizer": "^1.1",
+        "intervention/image": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\ImageTransformer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [ ],
+            "aliases": {}
+        }
+    }
+}

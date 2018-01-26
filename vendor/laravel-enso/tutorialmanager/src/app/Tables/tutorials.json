@@ -1,0 +1,54 @@
+{
+    "routePrefix": "system.tutorials",
+    "readSuffix": "getTableData",
+    "writeSuffix": null,
+    "name": "Tutorials",
+    "icon": "fa fa-book",
+    "crtNo": true,
+    "buttons": ["excel", "create", "edit", "destroy"],
+    "columns": [
+        {
+            "label": "Permission Name",
+            "name": "permissionName",
+            "data": "permissions.name",
+            "meta": ["searchable", "sortable"]
+        },
+        {
+            "label": "Element",
+            "name": "element",
+            "data": "tutorials.element",
+            "meta": ["searchable", "sortable"]
+        },
+        {
+            "label": "Title",
+            "name": "title",
+            "data": "tutorials.title",
+            "meta": ["searchable", "sortable"]
+        },
+        {
+            "label": "Placement",
+            "name": "placement",
+            "data": "tutorials.placement",
+            "enum": "\\LaravelEnso\\TutorialManager\\app\\Enums\\TutorialPlacement",
+            "meta": ["render", "sortable"]
+        },
+        {
+            "label": "Order",
+            "name": "order",
+            "data": "tutorials.order",
+            "meta": ["searchable", "sortable"]
+        },
+        {
+            "label": "Created At",
+            "name": "created_at",
+            "data": "tutorials.created_at",
+            "meta": ["sortable", "date"]
+        },
+        {
+            "label": "Updated At",
+            "name": "updated_at",
+            "data": "permissions.updated_at",
+            "meta": ["sortable", "date"]
+        }
+    ]
+}

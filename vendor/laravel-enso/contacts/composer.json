@@ -1,0 +1,50 @@
+{
+    "name": "laravel-enso/contacts",
+    "description": "Contacts dependency for Larave Enso",
+    "keywords": [
+        "laravel-enso",
+        "contacts"
+    ],
+    "homepage": "https://github.com/laravel-enso/Contacts",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihai Ocneanu",
+            "email": "mihai.ocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "5.5.*",
+        "laravel-enso/helpers": "1.7.*",
+        "laravel-enso/structuremanager": "2.1.*",
+        "laravel-enso/trackwho": "1.5.*",
+        "laravel-enso/vuecomponents": "2.0.*",
+        "laravel-enso/vuedatatable": "1.0.*"
+    },
+    "require-dev": {
+        "laravel-enso/testhelper": "1.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\Contacts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\Contacts\\AppServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

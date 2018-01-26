@@ -1,0 +1,60 @@
+{
+    "global": {
+        "lang": "en",
+        "dtStateSave": true,
+        "fixedHeader": true,
+        "collapsedSidebar": false,
+        "theme": "purple"
+    },
+    "local": {
+        "dashboard": {
+            "grid": [
+                [{
+                    "type": "chart",
+                    "data": {
+                        "type": "bar",
+                        "source": "/dashboard/getBarChartData"
+                    }
+                }, {
+                    "type": "chart",
+                    "data": {
+                        "type": "radar",
+                        "source": "/dashboard/getRadarChartData"
+                    }
+                }, {
+                    "type": "chart",
+                    "data": {
+                        "type": "polarArea",
+                        "source": "/dashboard/getPolarChartData"
+                    }
+                }],
+                [{
+                    "type": "chart",
+                    "data": {
+                        "type": "pie",
+                        "source": "/dashboard/getPieChartData"
+                    }
+                }, {
+                    "type": "chart",
+                    "data": {
+                        "type": "doughnut",
+                        "source": "/dashboard/getPieChartData"
+                    }
+                }, {
+                    "type": "chart",
+                    "data": {
+                        "type": "line",
+                        "source": "/dashboard/getLineChartData"
+                    }
+                }],
+                [{
+                    "type": "chart",
+                    "data": {
+                        "type": "bubble",
+                        "source": "/dashboard/getBubbleChartData"
+                    }
+                }]
+            ]
+        }
+    }
+}

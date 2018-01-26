@@ -1,0 +1,48 @@
+{
+    "name": "laravel-enso/permissionmanager",
+    "description": "Permission Manager dependency for Laravel Enso",
+    "keywords": [
+        "laravel-enso",
+        "permission-manager",
+        "laravel-permissions"
+    ],
+    "homepage": "https://github.com/laravel-enso/PermissionManager",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "5.5.*",
+        "laravel-enso/dbsyncmigrations": "2.1.*",
+        "laravel-enso/formbuilder": "2.2.*",
+        "laravel-enso/helpers": "1.7.*",
+        "laravel-enso/rolemanager": "2.1.*",
+        "laravel-enso/structuremanager": "2.1.*",
+        "laravel-enso/tutorialmanager": "2.1.*",
+        "laravel-enso/vuedatatable": "1.0.*"
+    },
+    "require-dev": {
+        "laravel-enso/testhelper": "1.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\PermissionManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\PermissionManager\\AppServiceProvider",
+                "LaravelEnso\\PermissionManager\\AuthServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

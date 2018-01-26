@@ -1,0 +1,32 @@
+{
+    "name": "laravel-enso/structuremanager",
+    "description": "Structure Manager dependency for Laravel Enso",
+    "keywords": [
+        "laravel-enso",
+        "structuremanager",
+        "enso-helper"
+    ],
+    "homepage": "https://github.com/laravel-enso/StructureManager",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "5.5.*",
+        "laravel-enso/menumanager": "2.1.*",
+        "laravel-enso/permissionmanager": "2.1.*",
+        "laravel-enso/rolemanager": "2.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\StructureManager\\": "src/"
+        }
+    }
+}

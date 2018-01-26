@@ -1,0 +1,21 @@
+{
+    "columns": "1",
+    "routePrefix": "system.permissionGroups",
+    "fields": [{
+        "label": "Name",
+        "name": "name",
+        "value": null,
+        "meta": {
+            "type": "input",
+            "content": "text"
+        }
+    }, {
+        "label": "Description",
+        "name": "description",
+        "value": null,
+        "meta": {
+            "type": "input",
+            "content": "text"
+        }
+    }]
+}
