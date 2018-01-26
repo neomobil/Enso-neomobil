@@ -1,8 +1,7 @@
 /node_modules
 /.vscode
 /packages
-/public/hot
-/public/storage
+/public
 /storage/*.key
 /.idea
 /.vagrant
