@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'version' => '2.0.35',
+    'version' => '3.7.3',
+    'ownerCompanyId' => env('OWNER_COMPANY_ID', 1),
+    'showQuote' => env('SHOW_QUOTE', true),
     'defaultRole' => 'admin',
-    'phpDateFormat' => 'd-m-Y',
-    'jsDateFormat' => 'DD-MM-YYYY',
-    'paths' => [
-        'files' => 'files',
-        'avatars' => 'avatars',
-        'imports' => 'imports',
-        'temp' => 'temp',
-        'exports' => 'exports',
-    ],
+    'dateFormat' => 'd-m-Y',
+    'dateTimeFormat' => 'd-m-Y H:i:s',
+    'facebook' => 'https://facebook.com',
+    'googleplus' => 'https://plus.google.com',
+    'twitter' => 'https://twitter.com',
     'ravenKey' => env('RAVEN_DSN', null),
     'cacheLifetime' => env('CACHE_LIFETIME', 60),
+    'ensoApiToken' => env('ENSO_API_TOKEN', null),
+    'extendedDocumentTitle' => env('EXTENDED_DOCUMENT_TITLE', false),
 ];

@@ -1,8 +1,10 @@
 <?php
 
 return [
-    'editableTimeLimitInHours' => 24,
-    'commentables' => [
-        'owner' => App\Owner::class,
+    'editableTimeLimit' => 24 * 60 * 60,
+    'onDelete' => 'cascade',
+    'humanReadableDates' => true,
+    'loggableMorph' => [
+        'commentable' => [],
     ],
 ];

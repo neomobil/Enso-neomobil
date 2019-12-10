@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'addressables' => [
-        'owner' => App\Owner::class,
-    ],
+    'onDelete' => 'cascade',
     'streetTypes' => [
         'Street' => 'Street',
         'Avenue' => 'Avenue',
@@ -17,9 +15,16 @@ return [
         'Bend' => 'Bend',
         'Square' => 'Square',
     ],
-    'validations' => [
-        'street' => 'required',
-        'city' => 'required',
-        'country_id' => 'required',
+    'buildingTypes' => [
+        'Offices' => 'Offices',
+        'Residential' => 'Residential',
+        'Commercial' => 'Commercial',
+        'Industrial' => 'Industrial',
+    ],
+    'label' => [
+        'separator' => ' - ',
+        'attributes' => [
+            'locality', 'street', 'number',
+        ],
     ],
 ];

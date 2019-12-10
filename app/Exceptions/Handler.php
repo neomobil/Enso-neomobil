@@ -3,8 +3,8 @@
 namespace App\Exceptions;
 
 use Exception;
-use LaravelEnso\Helpers\app\Exceptions\EnsoException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use LaravelEnso\Helpers\app\Exceptions\EnsoException;
 
 class Handler extends ExceptionHandler
 {
@@ -13,8 +13,7 @@ class Handler extends ExceptionHandler
     ];
 
     protected $dontFlash = [
-        'password',
-        'password_confirmation',
+        'password', 'password_confirmation',
     ];
 
     public function report(Exception $exception)
@@ -24,10 +23,5 @@ class Handler extends ExceptionHandler
         }
 
         parent::report($exception);
-    }
-
-    public function render($request, Exception $exception)
-    {
-        return parent::render($request, $exception);
     }
 }

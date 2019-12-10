@@ -2,24 +2,12 @@
 
 namespace App;
 
-use LaravelEnso\Core\app\Models\User as Users;
-use LaravelEnso\CommentsManager\app\Traits\Comments;
-use LaravelEnso\DocumentsManager\app\Traits\Documents;
+use LaravelEnso\Comments\app\Traits\Comments;
+use LaravelEnso\Core\app\Models\User as CoreUser;
+use LaravelEnso\Discussions\app\Traits\Discussions;
+use LaravelEnso\Discussions\app\Traits\Replies;
 
-class User extends Users
+class User extends CoreUser
 {
-    use Comments, Documents;
-
-    protected $hidden = ['password', 'remember_token'];
-
-    protected $fillable = ['first_name', 'last_name', 'phone', 'is_active'];
-
-    protected $casts = ['is_active' => 'boolean'];
-
-    protected $appends = ['fullName'];
-
-    public function owner()
-    {
-        return $this->belongsTo('App\Owner');
-    }
+    use Comments, Discussions, Replies;
 }
